@@ -8,7 +8,7 @@
         <div class="relative w-16 h-16">
           <img
             class="rounded-full border border-gray-100 shadow-sm"
-            src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=512&h=512&q=80"
+            src="./assets/profile.jpg"
             alt="user image"
           />
         </div>
@@ -33,53 +33,48 @@
         class="flex-col items-end mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0"
       >
         <li class="menu-button"><a href="#">Home</a></li>
-        <li class="menu-button"><a href="#work" v-smooth-scroll>Works</a></li>
+        <li class="menu-button"><a href="#work" v-smooth-scroll>Work Experience</a></li>
         <li class="menu-button">
-          <a href="#testimonial" v-smooth-scroll>Testimonials</a>
+          <a href="#testimonial" v-smooth-scroll>Contact Me</a>
         </li>
-        <li class="menu-button"><a href="#about" v-smooth-scroll>About</a></li>
+        <li class="menu-button"><a href="#about" v-smooth-scroll>About Me</a></li>
       </ul>
     </nav>
     <!-- End Navbar -->
 
-    <div class="flex items-center">
+    <div class="flex items-center mt-6">
       <div class="w-11/12 space-y-5 md:space-y-10">
-        <h3
-          class="hello-button text-gray-700 w-fit md:py-3 md:px-5 py-1 px-2 rounded-lg 3xl:text-3xl 2xl:text-xl lg:text-xl md:text-md text-sm font-semibold font-work_sans"
-        >
-          👋 Hola,
-        </h3>
         <h1
           class="3xl:text-8xl 2xl:text-7xl xl:text-6xl lg:text-4xl md:text-3xl sm:text-3xl text-xl font-Eczar font-bold leading-tight text-gray-700"
         >
-          It's
+          I'm
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/ian-montero-moya-88a180209/"
             target="_blank"
             class="text-black hover:underline"
           >
-            Aliza Khan</a
-          >🙇‍♀️<br />Creative Designer and Storyteller
+            Ian Montero</a
+          >🧑🏽‍💻<br />Software Engineer & Backend Developer
         </h1>
+      </div>
 
+      <div class="w-8/12 flex justify-end">
         <div class="md:flex gap-1 md:gap-10">
-          <button class="text-white bg-gray-800 submit-button hidden md:block">
-            View My Work
-          </button>
           <button
+            onclick="window.open('https://medsimple.ca');"
+            target="_blank"
+            class="text-white bg-gray-800 submit-button hidden md:block"
+          >
+            Proudest Work
+          </button>
+
+          <button
+            onclick="window.location.href = 'mailto:djmm171298@gmail.com';"
             class="text-gray-800 border-4 border-gray-800 submit-button mb-5 md:mb-0"
           >
             Contact Me
           </button>
         </div>
-      </div>
-
-      <div class="w-8/12 flex justify-end">
-        <img
-          class="3xl:h-[800px] 2xl:h-[650px] xl:h-[550px] lg:h-[550px] md:h-[450px] sm:h-[350px]"
-          src="./assets/profile-female.png"
-          alt="user image"
-        />
       </div>
     </div>
   </div>
@@ -361,11 +356,11 @@
   </div>
 </template>
 <script>
-  export default {
-    data() {
-      return {
-        showMenu: false,
-      }
-    },
-  }
+export default {
+  data() {
+    return {
+      showMenu: false,
+    };
+  },
+};
 </script>

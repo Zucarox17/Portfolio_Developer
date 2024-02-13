@@ -6,12 +6,13 @@
 
 .banner-1 {
   @apply px-5  pt-5 md:pt-10 3xl:px-36 2xl:px-36 xl:px-28 lg:px-24 md:px-16;
-  background-color: #ffeed9;
+  height: 400px;
+  background-color: #f4f5f4;
 }
 
 .banner-2 {
   @apply px-5  pt-5 md:pt-10 3xl:px-36 2xl:px-36 xl:px-28 lg:px-24 md:px-16;
-  background-color: #ffddbf;
+  background-color: #b9cebd;
 }
 .bg-yellowis {
   background-color: #ffddbf;

@@ -33,11 +33,15 @@
         class="flex-col items-end mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0"
       >
         <li class="menu-button"><a href="#">Home</a></li>
-        <li class="menu-button"><a href="#work" v-smooth-scroll>Work Experience</a></li>
+        <li class="menu-button">
+          <a href="#work" v-smooth-scroll>Work Experience</a>
+        </li>
         <li class="menu-button">
           <a href="#testimonial" v-smooth-scroll>Contact Me</a>
         </li>
-        <li class="menu-button"><a href="#about" v-smooth-scroll>About Me</a></li>
+        <li class="menu-button">
+          <a href="#about" v-smooth-scroll>About Me</a>
+        </li>
       </ul>
     </nav>
     <!-- End Navbar -->
@@ -80,69 +84,11 @@
   </div>
 
   <div class="banner-2 space-y-10 pb-20" id="work">
-    <h3 class="heading3 my-5">My Recent Work</h3>
-    <div class="card">
-      <div class="space-y-5 py-8 px-8 md:py-16 md:px-20 md:w-1/2">
-        <h4 class="project-title item">Sheepify States</h4>
-        <p class="font-work_sans pr-12">
-          Designed some empty state screens in kawaii style for the popular
-          sheepify app.Tailwind lets you conditionally apply utility classes in
-          different states using variant modifiers. For example, use hover:gap-6
-          to only apply the gap-6 utility
-        </p>
-        <button class="text-sky-800 font-bold text-2xl tracking-wider">
-          View Case Study
-        </button>
-      </div>
-      <div class="card-image bg-green-100">
-        <img
-          class="object-cover w-full h-72 md:h-96"
-          src="./assets/project1.png"
-        />
-      </div>
-    </div>
+    <h3 class="heading3 my-5">Work Experience</h3>
+    
+    
 
-    <div class="card">
-      <div class="space-y-5 py-8 px-8 md:py-16 md:px-20 md:w-1/2">
-        <h4 class="project-title item">Sheepify States</h4>
-        <p class="font-work_sans pr-12">
-          Designed some empty state screens in kawaii style for the popular
-          sheepify app.Tailwind lets you conditionally apply utility classes in
-          different states using variant modifiers. For example, use hover:gap-6
-          to only apply the gap-6 utility
-        </p>
-        <button class="text-sky-800 font-bold text-2xl tracking-wider">
-          View Case Study
-        </button>
-      </div>
-      <div class="card-image">
-        <img
-          class="object-cover w-full h-48 md:h-96"
-          src="./assets/project2.png"
-        />
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="space-y-5 py-8 px-8 md:py-16 md:px-20 md:w-1/2">
-        <h4 class="project-title">Sheepify States</h4>
-        <p class="font-work_sans pr-12">
-          Designed some empty state screens in kawaii style for the popular
-          sheepify app.Tailwind lets you conditionally apply utility classes in
-          different states using variant modifiers. For example, use hover:gap-6
-          to only apply the gap-6 utility
-        </p>
-        <button class="text-sky-800 font-bold text-2xl tracking-wider">
-          View Case Study
-        </button>
-      </div>
-      <div class="card-image bg-green-100">
-        <img
-          class="object-cover w-full h-72 md:h-96"
-          src="./assets/project1.png"
-        />
-      </div>
-    </div>
+    
   </div>
 
   <div class="banner-1" id="testimonial">
@@ -362,5 +308,56 @@ export default {
       showMenu: false,
     };
   },
+  mounted() {
+  this.call_work(); // Llamar a call_work cuando el componente se monta
+},
+methods: {
+  print_Work(title, jobDesc, imageName, company, siteURL) {
+    const htmlString = `
+      <div class="card">
+        <div class="space-y-5 py-8 px-8 md:py-16 md:px-20 md:w-1/2">
+          <h4 class="project-title item">${title}</h4>
+          <p class="font-work_sans pr-12">${jobDesc}</p>
+          <button onclick="window.open('${siteURL}');" target="_blank" class="text-sky-800 font-bold text-2xl tracking-wider">${company}</button>
+        </div>
+        <div class="card-image bg-green-100">
+          <img class="object-cover w-full h-72 md:h-96" src="src/assets/${imageName}" />
+        </div>
+      </div>
+    `;
+    const printDiv = document.querySelector("#work");
+    if (printDiv) { 
+      // Agregar la nueva tarjeta al contenido existente
+      printDiv.innerHTML += htmlString;
+    } else {
+      console.error("Elemento #work no encontrado en el DOM");
+    }
+  },
+  call_work() {
+    this.print_Work(
+      "Software Engineer",
+      "Work with team of developers in the development of backend and frontend solutions for the system that belongs to the company. I had to work with the docker tool to manage the Mysql database images and the main site image, also Github was used as version control. And the site is deployed on AWS . Develop bug fixes and create new backend and frontend feautures, using reactjs and php with Yii frame work. I managed to meet the sprint dates by demonstrating my progress using the scrum methodology.",
+      "commandlink.jpg",
+      "Commandlink",
+      "https://www.commandlink.com"
+    );
+    this.print_Work(
+      "Software Developer",
+      "Work with the team of software engineers in the development from scratch of Web applications for clients, using different stacks and different tools. For the development from scratch I used the Docker tool for database and site management, I also got experience in Google Cloud Platform and AWS. Among the stacks that I worked mainly on was Php with its framework Laravel and Mysql as a database, I also managed Python in the backend with Django, withs Sqlite and ReacJS,  finally the last stack I worked on was Java using SpringBoot, with mongo DB, creating an API’s  for a clients. Use CI/CD for each of the projects we work on, creating continuous iterations to manage and meet client deadlines, using tools such as Jira and Slack. I managed to increase the amount of projects that the company could handle since I was able to be in two projects simultaneously as well as meet the expectations of the clients due to the process that is carried out with them in the development of the website. ",
+      "dsprocr.jpg",
+      "DSpro",
+      "https://dspro.tech"
+    );
+    this.print_Work(
+      "Full Stack Developer",
+      " As a lead I have been responsible for planning, executing and testing the projects and leading a team of 5 Software Developers. Also I have to develop Web applications in blockchain with javascript, web3 and reactjs. I had a direct relationship with customers and accompany them in the process of creating the Web Application. As a Full Stack developer I had to create resposive sites with diferents stacks as C# with framwork .NET, SQL and bootstrap, also Full stack aplications with php, Mysql, and in the Frontend with VueJS. I Develop  Smarts contracts with solidity to web3 Applications, Also I work and payment API’s as Paypal API or Binance API, among others... I had experience in CRM as a Magento and Wordpress, creating templates and made bug fixes",
+      "studios23.jpg",
+      "Studios23",
+      "https://www.codester.com/studios23"
+    );
+  }
+}
+
 };
 </script>
+

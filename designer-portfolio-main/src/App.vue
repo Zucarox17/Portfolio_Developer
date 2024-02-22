@@ -37,10 +37,10 @@
           <a href="#work" v-smooth-scroll>Work Experience</a>
         </li>
         <li class="menu-button">
-          <a href="#testimonial" v-smooth-scroll>Contact Me</a>
+          <a href="#tools" v-smooth-scroll>Tools Experience</a>
         </li>
         <li class="menu-button">
-          <a href="#about" v-smooth-scroll>About Me</a>
+          <a href="#contact" v-smooth-scroll>Contact Me</a>
         </li>
       </ul>
     </nav>
@@ -91,14 +91,14 @@
     
   </div>
 
-  <div class="banner-1" id="testimonial">
+  <div class="banner-1" id="tools">
     <div class="space-y-4 grid place-items-center mt-5">
-      <h3 class="heading3">Some Generous Words</h3>
+      <h3 class="heading3">Some Tools and Skills</h3>
       <p class="font-work_sans text-gray-600 font-semibold leading-relaxed">
-        Some of my favorite testimonials from my clients
+        Some Tools and Skills  I've been working with
       </p>
     </div>
-    <div class="max-w-6xl mx-auto px-8 py-16">
+    <div class="max-w-6xl mx-auto px-8 py-16 ">
       <div class="relative">
         <div class="relative lg:flex rounded-lg shadow-2xl overflow-hidden">
           <div
@@ -187,7 +187,7 @@
     </div>
   </div>
 
-  <div class="banner-2 md:flex items-center md:justify-evenly" id="about">
+  <div class="banner-2 md:flex items-center md:justify-evenly" id="contact">
     <img
       class="md:h-[500px] h-[400px]"
       src="./assets/about-female.png"
@@ -349,7 +349,7 @@ methods: {
       "https://dspro.tech"
     );
     this.print_Work(
-      "Full Stack Developer",
+      "Team Lead / Full Stack Developer",
       " As a lead I have been responsible for planning, executing and testing the projects and leading a team of 5 Software Developers. Also I have to develop Web applications in blockchain with javascript, web3 and reactjs. I had a direct relationship with customers and accompany them in the process of creating the Web Application. As a Full Stack developer I had to create resposive sites with diferents stacks as C# with framwork .NET, SQL and bootstrap, also Full stack aplications with php, Mysql, and in the Frontend with VueJS. I Develop  Smarts contracts with solidity to web3 Applications, Also I work and payment API’s as Paypal API or Binance API, among others... I had experience in CRM as a Magento and Wordpress, creating templates and made bug fixes",
       "studios23.jpg",
       "Studios23",

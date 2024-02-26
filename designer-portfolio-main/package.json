@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "swiper": "^11.0.6",
     "vue": "^3.2.25",
     "vue3-smooth-scroll": "^0.8.1"
   },

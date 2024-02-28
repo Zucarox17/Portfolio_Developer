@@ -64,12 +64,11 @@
 
       <div class="w-8/12 flex justify-end">
         <div class="md:flex gap-1 md:gap-10">
-          <button
-            onclick="window.open('https://medsimple.ca');"
-            target="_blank"
+         <button
+            id="resume" @click="downloadPDF"
             class="text-white bg-gray-800 submit-button hidden md:block"
           >
-            Proudest Work
+            Download My Resume
           </button>
 
           <button
@@ -485,11 +484,12 @@
         PostgreSq, also I used cloud enviroment with GCP and AWS, finally I also
         have expirence with docker.
       </p>
-      <button
-            id="resume" @click="downloadPDF"
+       <button
+            onclick="window.open('https://medsimple.ca');"
+            target="_blank"
             class="text-white bg-gray-800 submit-button hidden md:block"
           >
-            Download My Resume
+            Proudest Work
           </button>
     </div>
   </div>

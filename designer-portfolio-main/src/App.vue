@@ -40,7 +40,7 @@
           <a href="#tools" v-smooth-scroll>Tools Experience</a>
         </li>
         <li class="menu-button">
-          <a href="#contact" v-smooth-scroll>Contact Me</a>
+          <a href="#About" v-smooth-scroll>About Me</a>
         </li>
       </ul>
     </nav>
@@ -140,8 +140,8 @@
                     <p>
                       I have used
                       <strong class="text-gray-900 font-medium">Slack</strong>
-                      as a tool for group communication and manage
-                      CI/CD of projects.
+                      as a tool for group communication and manage CI/CD of
+                      projects.
                     </p>
                     <p class="mt-6">
                       <a
@@ -206,7 +206,8 @@
                     <p>
                       I have used
                       <strong class="text-gray-900 font-medium">Jira</strong>
-                       as a project and task management tool, as well as to manage project progress.
+                      as a project and task management tool, as well as to
+                      manage project progress.
                     </p>
                     <p class="mt-6">
                       <a
@@ -235,7 +236,6 @@
                   />
                   <div class="absolute inset-0 bg-gray-700 opacity-75"></div>
                   <!-- SVG del docker -->
-                 
                 </div>
                 <div class="relative lg:w-7/12 bg-white">
                   <svg
@@ -252,7 +252,8 @@
                     <p>
                       I have used
                       <strong class="text-gray-900 font-medium">Docker</strong>
-                      as a project container tool providing greater scalability and ease of project management.
+                      as a project container tool providing greater scalability
+                      and ease of project management.
                     </p>
                     <p class="mt-6">
                       <a
@@ -281,7 +282,6 @@
                   />
                   <div class="absolute inset-0 bg-gray-700 opacity-75"></div>
                   <!-- SVG del github -->
-                 
                 </div>
                 <div class="relative lg:w-7/12 bg-white">
                   <svg
@@ -298,14 +298,157 @@
                     <p>
                       I have used
                       <strong class="text-gray-900 font-medium">Github</strong>
-                      as a central platform to manage and collaborate on projects tracking  code changes, facilitating team collaboration, and project evolution tracking.
+                      as a central platform to manage and collaborate on
+                      projects tracking code changes, facilitating team
+                      collaboration.
                     </p>
                     <p class="mt-6">
                       <a
-                        href="https://www.docker.com"
+                        href="https://github.com"
                         target="_blank"
                         class="font-medium text-indigo-600 hover:text-indigo-900"
-                        >&rarr; Learn more about Docker
+                        >&rarr; Learn more about GitHub
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- skill 5 -->
+            <div class="swiper-slide">
+              <div
+                class="relative lg:flex rounded-lg shadow-2xl overflow-hidden"
+              >
+                <div
+                  class="h-56 lg:h-auto lg:w-5/12 relative flex items-center justify-center"
+                >
+                  <img
+                    class="absolute h-full w-full object-cover"
+                    src="./assets/figma.png"
+                    alt=""
+                  />
+                  <div class="absolute inset-0 bg-gray-700 opacity-75"></div>
+                  <!-- SVG del figma -->
+                </div>
+                <div class="relative lg:w-7/12 bg-white">
+                  <svg
+                    class="absolute h-full text-white w-24 -ml-12"
+                    fill="currentColor"
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="none"
+                  >
+                    <polygon points="50,0 100,0 50,100 0,100" />
+                  </svg>
+                  <div
+                    class="relative py-12 lg:py-24 px-8 lg:px-16 text-gray-700 leading-relaxed"
+                  >
+                    <p>
+                      I have used
+                      <strong class="text-gray-900 font-medium">Figma</strong>
+                      as a collaborative design tool to create, prototype, and
+                      share user interfaces and experiences.
+                    </p>
+                    <p class="mt-6">
+                      <a
+                        href="https://www.figma.com"
+                        target="_blank"
+                        class="font-medium text-indigo-600 hover:text-indigo-900"
+                        >&rarr; Learn more about Figma
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- skill 6 -->
+            <div class="swiper-slide">
+              <div
+                class="relative lg:flex rounded-lg shadow-2xl overflow-hidden"
+              >
+                <div
+                  class="h-56 lg:h-auto lg:w-5/12 relative flex items-center justify-center"
+                >
+                  <img
+                    class="absolute h-full w-full object-cover"
+                    src="./assets/wordpress.png"
+                    alt=""
+                  />
+                  <div class="absolute inset-0 bg-gray-700 opacity-75"></div>
+                  <!-- SVG del  -->
+                </div>
+                <div class="relative lg:w-7/12 bg-white">
+                  <svg
+                    class="absolute h-full text-white w-24 -ml-12"
+                    fill="currentColor"
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="none"
+                  >
+                    <polygon points="50,0 100,0 50,100 0,100" />
+                  </svg>
+                  <div
+                    class="relative py-12 lg:py-24 px-8 lg:px-16 text-gray-700 leading-relaxed"
+                  >
+                    <p>
+                      I have used
+                      <strong class="text-gray-900 font-medium"
+                        >Wordpress</strong
+                      >
+                      as a content management system and website creator to
+                      design, build, and manage websites.
+                    </p>
+                    <p class="mt-6">
+                      <a
+                        href="https://wordpress.com"
+                        target="_blank"
+                        class="font-medium text-indigo-600 hover:text-indigo-900"
+                        >&rarr; Learn more about Wordpress
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- skill 7 -->
+            <div class="swiper-slide">
+              <div
+                class="relative lg:flex rounded-lg shadow-2xl overflow-hidden"
+              >
+                <div
+                  class="h-56 lg:h-auto lg:w-5/12 relative flex items-center justify-center"
+                >
+                  <img
+                    class="absolute h-full w-full object-cover"
+                    src="./assets/magento.jpg"
+                    alt=""
+                  />
+                  <div class="absolute inset-0 bg-gray-700 opacity-75"></div>
+                  <!-- SVG del  -->
+                </div>
+                <div class="relative lg:w-7/12 bg-white">
+                  <svg
+                    class="absolute h-full text-white w-24 -ml-12"
+                    fill="currentColor"
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="none"
+                  >
+                    <polygon points="50,0 100,0 50,100 0,100" />
+                  </svg>
+                  <div
+                    class="relative py-12 lg:py-24 px-8 lg:px-16 text-gray-700 leading-relaxed"
+                  >
+                    <p>
+                      I have used
+                      <strong class="text-gray-900 font-medium">Magento</strong>
+                      as a content management system and website creator to
+                      design, build, and manage websites.
+                    </p>
+                    <p class="mt-6">
+                      <a
+                        href="https://magento.com"
+                        target="_blank"
+                        class="font-medium text-indigo-600 hover:text-indigo-900"
+                        >&rarr; Learn more about Magento
                       </a>
                     </p>
                   </div>
@@ -321,26 +464,33 @@
     </div>
   </div>
 
-  <div class="banner-2 md:flex items-center md:justify-evenly" id="contact">
+  <div class="banner-2 md:flex items-center md:justify-evenly" id="About">
     <img
-      class="md:h-[500px] h-[400px]"
-      src="./assets/about-female.png"
+      class="md:h-[500px] h-[400px] myimages"
+      src="./assets/about.jpg"
       alt="user image"
     />
     <div class="space-y-5 py-8 px-8 md:py-16 md:px-20 md:w-1/2">
-      <h4 class="project-title item">Sheepify States</h4>
+      <h4 class="project-title item">About Me</h4>
       <p class="font-work_sans">
-        I am Salman Khan from Lucknow, India. I am working in an Indian Startup
-        as a User Eperience Designer for the past two years.
-        <br />
-        I got featured various times on many big and small marketplaces,
-        portfolio websites and blogs. I also received some awards and
-        recognitions from some of the big and small award companies. Besides
-        designing, I like to watch anime, read books and solve sudoku.
+        Passionate Software Engineer. I stand out for my ability to work
+        collaboratively, my proactivity, and my self-taught learning skills. I
+        am constantly motivated to expand my knowledge and improve my skills,
+        preparing myself for a promising future in the field of technology. My
+        experience encompasses a wide range of programming languages, including
+        PHP, Python, Java , C#, C++, CSS, and JavaScript. Additionally, I am
+        familiar with ReactJS, VueJS  and have used frameworks such as Node.js,
+        Laravel, Django, .NET and WordPress. I also possess strong knowledge in
+        backend development with databases like MySQL, SQL, Sqlite, Mongodb and
+        PostgreSq, also I used cloud enviroment with GCP and AWS, finally I also
+        have expirence with docker.
       </p>
-      <button class="text-sky-800 font-bold text-2xl tracking-wider">
-        View Case Study
-      </button>
+      <button
+            id="resume" @click="downloadPDF"
+            class="text-white bg-gray-800 submit-button hidden md:block"
+          >
+            Download My Resume
+          </button>
     </div>
   </div>
 
@@ -458,7 +608,7 @@ export default {
           <button onclick="window.open('${siteURL}');" target="_blank" class="text-sky-800 font-bold text-2xl tracking-wider">${company}</button>
         </div>
         <div class="card-image bg-green-100">
-          <img class="object-cover w-full h-72 md:h-96" src="src/assets/${imageName}" />
+          <img class="object-cover w-full h-72 md:h-96 " src="src/assets/${imageName}" />
         </div>
       </div>
     `;
@@ -502,6 +652,22 @@ export default {
         },
       });
     },
+    async downloadPDF() {
+      try {
+        const response = await fetch('/assets/resume/resume.pdf');
+        const blob = await response.blob();
+        const url = window.URL.createObjectURL(blob);
+
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'resume.pdf';
+        link.click();
+
+        window.URL.revokeObjectURL(url);
+      } catch (error) {
+        console.error('Error al descargar el PDF:', error);
+      }
+    }
   },
 };
 </script>

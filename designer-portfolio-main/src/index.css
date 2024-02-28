@@ -13,6 +13,8 @@
 .banner-2 {
   @apply px-5  pt-5 md:pt-10 3xl:px-36 2xl:px-36 xl:px-28 lg:px-24 md:px-16;
   background-color: #b9cebd;
+  padding-top: 5%;
+
 }
 .bg-yellowis {
   background-color: #ffddbf;
@@ -87,4 +89,8 @@
 .next-button svg {
   width: 20px;
   height: 20px;
+}
+.myimages {
+  border-radius: 3%;
+  opacity: 0.8;
 }

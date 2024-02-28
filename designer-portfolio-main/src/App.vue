@@ -68,7 +68,7 @@
             id="resume" @click="downloadPDF"
             class="text-white bg-gray-800 submit-button hidden md:block"
           >
-            Download My Resume
+            My Resume
           </button>
 
           <button

@@ -37,10 +37,13 @@
           <a href="#work" v-smooth-scroll>Work Experience</a>
         </li>
         <li class="menu-button">
-          <a href="#tools" v-smooth-scroll>Tools Experience</a>
+          <a href="#tools" v-smooth-scroll>Tools & Skills</a>
         </li>
         <li class="menu-button">
           <a href="#About" v-smooth-scroll>About Me</a>
+        </li>
+        <li class="menu-button">
+          <a href="#frameworks" v-smooth-scroll>Frameworks</a>
         </li>
       </ul>
     </nav>
@@ -64,8 +67,9 @@
 
       <div class="w-8/12 flex justify-end">
         <div class="md:flex gap-1 md:gap-10">
-         <button
-            id="resume" @click="downloadPDF"
+          <button
+            id="resume"
+            @click="downloadPDF"
             class="text-white bg-gray-800 submit-button hidden md:block"
           >
             My Resume
@@ -88,7 +92,7 @@
 
   <div class="banner-1" id="tools">
     <div class="space-y-4 grid place-items-center mt-5">
-      <h3 class="heading3">Some Tools and Skills</h3>
+      <h3 class="heading3">Tools and Skills</h3>
       <p class="font-work_sans text-gray-600 font-semibold leading-relaxed">
         Some Tools and Skills I've been working with
       </p>
@@ -478,94 +482,419 @@
         preparing myself for a promising future in the field of technology. My
         experience encompasses a wide range of programming languages, including
         PHP, Python, Java , C#, C++, CSS, and JavaScript. Additionally, I am
-        familiar with ReactJS, VueJS  and have used frameworks such as Node.js,
+        familiar with ReactJS, VueJS and have used frameworks such as Node.js,
         Laravel, Django, .NET and WordPress. I also possess strong knowledge in
         backend development with databases like MySQL, SQL, Sqlite, Mongodb and
         PostgreSq, also I used cloud enviroment with GCP and AWS, finally I also
         have expirence with docker.
       </p>
-       <button
-            onclick="window.open('https://medsimple.ca');"
-            target="_blank"
-            class="text-white bg-gray-800 submit-button hidden md:block"
-          >
-            Proudest Work
-          </button>
+      <button
+        onclick="window.open('https://medsimple.ca');"
+        target="_blank"
+        class="text-white bg-gray-800 submit-button hidden md:block"
+      >
+        Proudest Work
+      </button>
+    </div>
+  </div>
+  <div class="banner-1" id="frameworks">
+    <div class="space-y-4 grid place-items-center mt-5">
+      <h3 class="heading3">Frameworks and Libraries</h3>
+      <p class="font-work_sans text-gray-600 font-semibold leading-relaxed">
+        Some Frameworks and Libraries I've been working with
+      </p>
+    </div>
+    <div class="max-w-6xl mx-auto px-8 py-16">
+      <div class="relative">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="relative lg:flex rounded-lg shadow-2xl overflow-hidden"
+              >
+                <div
+                  class="h-56 lg:h-auto lg:w-5/12 relative flex items-center justify-center"
+                >
+                  <img
+                    class="absolute h-full w-full object-cover"
+                    src="https://a.slack-edge.com/80588/marketing/img/meta/slack_hash_256.png"
+                    alt=""
+                  />
+                  <div class="absolute inset-0 bg-gray-700 opacity-75"></div>
+                  <!-- SVG del Slack -->
+                  <svg
+                    class="relative"
+                    width="200"
+                    height="120"
+                    viewBox="0 0 200 120"
+                  >
+                    <path
+                      fill="#fff"
+                      fill-rule="evenodd"
+                      d="M63.75 75.24l2.5-5.93c2.7 2.05 6.3 3.13 9.85 3.13 2.61 0 4.27-1.03 4.27-2.6-.04-4.37-15.7-.95-15.82-11.9-.04-5.58 4.8-9.86 11.66-9.86 4.08 0 8.16 1.03 11.06 3.38l-2.34 6.05c-2.66-1.73-5.97-2.97-9.12-2.97-2.13 0-3.55 1.03-3.55 2.36.04 4.28 15.82 1.94 15.98 12.4 0 5.7-4.72 9.69-11.5 9.69-4.96 0-9.52-1.2-12.99-3.75zm96.01-8.08a7.16 7.16 0 0 1-8.11 3.5 7.35 7.35 0 0 1-5.38-7.13c0-3.34 2.2-6.27 5.38-7.12 3.16-.85 6.5.58 8.11 3.5l6.9-3.93a15.02 15.02 0 0 0-17.03-7.42 15.42 15.42 0 0 0-11.33 14.97c0 7.04 4.66 13.2 11.33 14.97a15.02 15.02 0 0 0 17.04-7.43l-6.9-3.9zM91.71 35.25h8.64v43.16h-8.64V35.25zm78.34 0v43.16h8.65V65.48l10.25 12.93H200l-13.03-15.37 12.06-14.34h-10.58l-9.76 11.9V35.25h-8.64zm-43.82 31.1a8.14 8.14 0 0 1-6.83 3.56 7.24 7.24 0 0 1-7.33-7.16 7.24 7.24 0 0 1 7.33-7.15 8.1 8.1 0 0 1 6.83 3.67v7.08zm0-18v3.4c-1.43-2.36-5-4-8.72-4-7.7 0-13.76 6.64-13.76 14.96 0 8.33 6.07 15.04 13.76 15.04 3.73 0 7.3-1.63 8.72-4v3.4H135v-28.8h-8.77zM10.53 66.4A5.32 5.32 0 0 1 5.3 71.8 5.32 5.32 0 0 1 .04 66.4a5.32 5.32 0 0 1 5.25-5.38h5.25v5.38zm2.63 0a5.32 5.32 0 0 1 5.25-5.38c2.9 0 5.25 2.4 5.25 5.38v13.46a5.32 5.32 0 0 1-5.25 5.39 5.32 5.32 0 0 1-5.25-5.39V66.4zm5.26-21.63a5.32 5.32 0 0 1-5.25-5.38A5.32 5.32 0 0 1 18.42 34c2.9 0 5.25 2.41 5.25 5.39v5.38h-5.25zm0 2.74c2.9 0 5.25 2.41 5.25 5.39a5.32 5.32 0 0 1-5.25 5.38H5.25A5.32 5.32 0 0 1 0 52.9a5.32 5.32 0 0 1 5.25-5.39h13.17zm21.03 5.39a5.32 5.32 0 0 1 5.25-5.39c2.9 0 5.25 2.41 5.25 5.39a5.32 5.32 0 0 1-5.25 5.38h-5.25V52.9zm-2.62 0a5.32 5.32 0 0 1-5.25 5.38 5.32 5.32 0 0 1-5.25-5.38V39.39A5.32 5.32 0 0 1 31.58 34c2.9 0 5.25 2.41 5.25 5.39v13.5zm-5.25 21.58c2.9 0 5.25 2.41 5.25 5.38a5.32 5.32 0 0 1-5.25 5.39 5.32 5.32 0 0 1-5.25-5.39v-5.38h5.25zm0-2.7a5.32 5.32 0 0 1-5.25-5.38 5.32 5.32 0 0 1 5.25-5.38h13.17c2.9 0 5.25 2.4 5.25 5.38a5.32 5.32 0 0 1-5.25 5.39H31.58z"
+                    />
+                  </svg>
+                </div>
+                <div class="relative lg:w-7/12 bg-white">
+                  <svg
+                    class="absolute h-full text-white w-24 -ml-12"
+                    fill="currentColor"
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="none"
+                  >
+                    <polygon points="50,0 100,0 50,100 0,100" />
+                  </svg>
+                  <div
+                    class="relative py-12 lg:py-24 px-8 lg:px-16 text-gray-700 leading-relaxed"
+                  >
+                    <p>
+                      I have used
+                      <strong class="text-gray-900 font-medium">Slack</strong>
+                      as a tool for group communication and manage CI/CD of
+                      projects.
+                    </p>
+                    <p class="mt-6">
+                      <a
+                        href="https://slack.com/intl/es-cr"
+                        target="_blank"
+                        class="font-medium text-indigo-600 hover:text-indigo-900"
+                        >&rarr; Learn more about Slack
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- skill 2 -->
+            <div class="swiper-slide">
+              <div
+                class="relative lg:flex rounded-lg shadow-2xl overflow-hidden"
+              >
+                <div
+                  class="h-56 lg:h-auto lg:w-5/12 relative flex items-center justify-center"
+                >
+                  <img
+                    class="absolute h-full w-full object-cover"
+                    src="./assets/jira.png"
+                    alt=""
+                  />
+                  <div class="absolute inset-0 bg-gray-700 opacity-75"></div>
+                  <!-- SVG del jira -->
+                  <svg
+                    class="relative"
+                    width="200"
+                    height="120"
+                    viewBox="0 0 200 120"
+                  >
+                    <!-- Imagen de fondo -->
+                    <image
+                      href="./assets/jiratext.png"
+                      width="100%"
+                      height="100%"
+                    />
+
+                    <!-- Path -->
+                    <!-- <path
+                      fill="#fff"
+                      fill-rule="evenodd"
+                      d="M63.75 75.24l2.5-5.93c2.7 2.05 6.3 3.13 9.85 3.13 2.61 0 4.27-1.03 4.27-2.6-.04-4.37-15.7-.95-15.82-11.9-.04-5.58 4.8-9.86 11.66-9.86 4.08 0 8.16 1.03 11.06 3.38l-2.34 6.05c-2.66-1.73-5.97-2.97-9.12-2.97-2.13 0-3.55 1.03-3.55 2.36.04 4.28 15.82 1.94 15.98 12.4 0 5.7-4.72 9.69-11.5 9.69-4.96 0-9.52-1.2-12.99-3.75zm96.01-8.08a7.16 7.16 0 0 1-8.11 3.5 7.35 7.35 0 0 1-5.38-7.13c0-3.34 2.2-6.27 5.38-7.12 3.16-.85 6.5.58 8.11 3.5l6.9-3.93a15.02 15.02 0 0 0-17.03-7.42 15.42 15.42 0 0 0-11.33 14.97c0 7.04 4.66 13.2 11.33 14.97a15.02 15.02 0 0 0 17.04-7.43l-6.9-3.9zM91.71 35.25h8.64v43.16h-8.64V35.25zm78.34 0v43.16h8.65V65.48l10.25 12.93H200l-13.03-15.37 12.06-14.34h-10.58l-9.76 11.9V35.25h-8.64zm-43.82 31.1a8.14 8.14 0 0 1-6.83 3.56 7.24 7.24 0 0 1-7.33-7.16 7.24 7.24 0 0 1 7.33-7.15 8.1 8.1 0 0 1 6.83 3.67v7.08zm0-18v3.4c-1.43-2.36-5-4-8.72-4-7.7 0-13.76 6.64-13.76 14.96 0 8.33 6.07 15.04 13.76 15.04 3.73 0 7.3-1.63 8.72-4v3.4H135v-28.8h-8.77zM10.53 66.4A5.32 5.32 0 0 1 5.3 71.8 5.32 5.32 0 0 1 .04 66.4a5.32 5.32 0 0 1 5.25-5.38h5.25v5.38zm2.63 0a5.32 5.32 0 0 1 5.25-5.38c2.9 0 5.25 2.4 5.25 5.38v13.46a5.32 5.32 0 0 1-5.25 5.39 5.32 5.32 0 0 1-5.25-5.39V66.4zm5.26-21.63a5.32 5.32 0 0 1-5.25-5.38A5.32 5.32 0 0 1 18.42 34c2.9 0 5.25 2.41 5.25 5.39v5.38h-5.25zm0 2.74c2.9 0 5.25 2.41 5.25 5.39a5.32 5.32 0 0 1-5.25 5.38H5.25A5.32 5.32 0 0 1 0 52.9a5.32 5.32 0 0 1 5.25-5.39h13.17zm21.03 5.39a5.32 5.32 0 0 1 5.25-5.39c2.9 0 5.25 2.41 5.25 5.39a5.32 5.32 0 0 1-5.25 5.38h-5.25V52.9zm-2.62 0a5.32 5.32 0 0 1-5.25 5.38 5.32 5.32 0 0 1-5.25-5.38V39.39A5.32 5.32 0 0 1 31.58 34c2.9 0 5.25 2.41 5.25 5.39v13.5zm-5.25 21.58c2.9 0 5.25 2.41 5.25 5.38a5.32 5.32 0 0 1-5.25 5.39 5.32 5.32 0 0 1-5.25-5.39v-5.38h5.25zm0-2.7a5.32 5.32 0 0 1-5.25-5.38 5.32 5.32 0 0 1 5.25-5.38h13.17c2.9 0 5.25 2.4 5.25 5.38a5.32 5.32 0 0 1-5.25 5.39H31.58z"
+                    /> -->
+                  </svg>
+                </div>
+                <div class="relative lg:w-7/12 bg-white">
+                  <svg
+                    class="absolute h-full text-white w-24 -ml-12"
+                    fill="currentColor"
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="none"
+                  >
+                    <polygon points="50,0 100,0 50,100 0,100" />
+                  </svg>
+                  <div
+                    class="relative py-12 lg:py-24 px-8 lg:px-16 text-gray-700 leading-relaxed"
+                  >
+                    <p>
+                      I have used
+                      <strong class="text-gray-900 font-medium">Jira</strong>
+                      as a project and task management tool, as well as to
+                      manage project progress.
+                    </p>
+                    <p class="mt-6">
+                      <a
+                        href="https://www.atlassian.com/software/jira?&aceid=&adposition=&adgroup=140479881486&campaign=18442480203&creative=656562805651&device=c&keyword=jira&matchtype=e&network=g&placement=&ds_kids=p73335832032&ds_e=GOOGLE&ds_eid=700000001558501&ds_e1=GOOGLE&gad_source=1&gclid=CjwKCAiArfauBhApEiwAeoB7qCrCy1YHSDsLkdA8x07AlC-lvTcpkK7Cbi4up1q6veyK0o8QWFlGhxoCH60QAvD_BwE&gclsrc=aw.ds"
+                        target="_blank"
+                        class="font-medium text-indigo-600 hover:text-indigo-900"
+                        >&rarr; Learn more about Jira
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- skill 3 -->
+            <div class="swiper-slide">
+              <div
+                class="relative lg:flex rounded-lg shadow-2xl overflow-hidden"
+              >
+                <div
+                  class="h-56 lg:h-auto lg:w-5/12 relative flex items-center justify-center"
+                >
+                  <img
+                    class="absolute h-full w-full object-cover"
+                    src="./assets/docker.png"
+                    alt=""
+                  />
+                  <div class="absolute inset-0 bg-gray-700 opacity-75"></div>
+                  <!-- SVG del docker -->
+                </div>
+                <div class="relative lg:w-7/12 bg-white">
+                  <svg
+                    class="absolute h-full text-white w-24 -ml-12"
+                    fill="currentColor"
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="none"
+                  >
+                    <polygon points="50,0 100,0 50,100 0,100" />
+                  </svg>
+                  <div
+                    class="relative py-12 lg:py-24 px-8 lg:px-16 text-gray-700 leading-relaxed"
+                  >
+                    <p>
+                      I have used
+                      <strong class="text-gray-900 font-medium">Docker</strong>
+                      as a project container tool providing greater scalability
+                      and ease of project management.
+                    </p>
+                    <p class="mt-6">
+                      <a
+                        href="https://www.docker.com"
+                        target="_blank"
+                        class="font-medium text-indigo-600 hover:text-indigo-900"
+                        >&rarr; Learn more about Docker
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- skill 4 -->
+            <div class="swiper-slide">
+              <div
+                class="relative lg:flex rounded-lg shadow-2xl overflow-hidden"
+              >
+                <div
+                  class="h-56 lg:h-auto lg:w-5/12 relative flex items-center justify-center"
+                >
+                  <img
+                    class="absolute h-full w-full object-cover"
+                    src="./assets/github.png"
+                    alt=""
+                  />
+                  <div class="absolute inset-0 bg-gray-700 opacity-75"></div>
+                  <!-- SVG del github -->
+                </div>
+                <div class="relative lg:w-7/12 bg-white">
+                  <svg
+                    class="absolute h-full text-white w-24 -ml-12"
+                    fill="currentColor"
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="none"
+                  >
+                    <polygon points="50,0 100,0 50,100 0,100" />
+                  </svg>
+                  <div
+                    class="relative py-12 lg:py-24 px-8 lg:px-16 text-gray-700 leading-relaxed"
+                  >
+                    <p>
+                      I have used
+                      <strong class="text-gray-900 font-medium">Github</strong>
+                      as a central platform to manage and collaborate on
+                      projects tracking code changes, facilitating team
+                      collaboration.
+                    </p>
+                    <p class="mt-6">
+                      <a
+                        href="https://github.com"
+                        target="_blank"
+                        class="font-medium text-indigo-600 hover:text-indigo-900"
+                        >&rarr; Learn more about GitHub
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- skill 5 -->
+            <div class="swiper-slide">
+              <div
+                class="relative lg:flex rounded-lg shadow-2xl overflow-hidden"
+              >
+                <div
+                  class="h-56 lg:h-auto lg:w-5/12 relative flex items-center justify-center"
+                >
+                  <img
+                    class="absolute h-full w-full object-cover"
+                    src="./assets/figma.png"
+                    alt=""
+                  />
+                  <div class="absolute inset-0 bg-gray-700 opacity-75"></div>
+                  <!-- SVG del figma -->
+                </div>
+                <div class="relative lg:w-7/12 bg-white">
+                  <svg
+                    class="absolute h-full text-white w-24 -ml-12"
+                    fill="currentColor"
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="none"
+                  >
+                    <polygon points="50,0 100,0 50,100 0,100" />
+                  </svg>
+                  <div
+                    class="relative py-12 lg:py-24 px-8 lg:px-16 text-gray-700 leading-relaxed"
+                  >
+                    <p>
+                      I have used
+                      <strong class="text-gray-900 font-medium">Figma</strong>
+                      as a collaborative design tool to create, prototype, and
+                      share user interfaces and experiences.
+                    </p>
+                    <p class="mt-6">
+                      <a
+                        href="https://www.figma.com"
+                        target="_blank"
+                        class="font-medium text-indigo-600 hover:text-indigo-900"
+                        >&rarr; Learn more about Figma
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- skill 6 -->
+            <div class="swiper-slide">
+              <div
+                class="relative lg:flex rounded-lg shadow-2xl overflow-hidden"
+              >
+                <div
+                  class="h-56 lg:h-auto lg:w-5/12 relative flex items-center justify-center"
+                >
+                  <img
+                    class="absolute h-full w-full object-cover"
+                    src="./assets/wordpress.png"
+                    alt=""
+                  />
+                  <div class="absolute inset-0 bg-gray-700 opacity-75"></div>
+                  <!-- SVG del  -->
+                </div>
+                <div class="relative lg:w-7/12 bg-white">
+                  <svg
+                    class="absolute h-full text-white w-24 -ml-12"
+                    fill="currentColor"
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="none"
+                  >
+                    <polygon points="50,0 100,0 50,100 0,100" />
+                  </svg>
+                  <div
+                    class="relative py-12 lg:py-24 px-8 lg:px-16 text-gray-700 leading-relaxed"
+                  >
+                    <p>
+                      I have used
+                      <strong class="text-gray-900 font-medium"
+                        >Wordpress</strong
+                      >
+                      as a content management system and website creator to
+                      design, build, and manage websites.
+                    </p>
+                    <p class="mt-6">
+                      <a
+                        href="https://wordpress.com"
+                        target="_blank"
+                        class="font-medium text-indigo-600 hover:text-indigo-900"
+                        >&rarr; Learn more about Wordpress
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- skill 7 -->
+            <div class="swiper-slide">
+              <div
+                class="relative lg:flex rounded-lg shadow-2xl overflow-hidden"
+              >
+                <div
+                  class="h-56 lg:h-auto lg:w-5/12 relative flex items-center justify-center"
+                >
+                  <img
+                    class="absolute h-full w-full object-cover"
+                    src="./assets/magento.jpg"
+                    alt=""
+                  />
+                  <div class="absolute inset-0 bg-gray-700 opacity-75"></div>
+                  <!-- SVG del  -->
+                </div>
+                <div class="relative lg:w-7/12 bg-white">
+                  <svg
+                    class="absolute h-full text-white w-24 -ml-12"
+                    fill="currentColor"
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="none"
+                  >
+                    <polygon points="50,0 100,0 50,100 0,100" />
+                  </svg>
+                  <div
+                    class="relative py-12 lg:py-24 px-8 lg:px-16 text-gray-700 leading-relaxed"
+                  >
+                    <p>
+                      I have used
+                      <strong class="text-gray-900 font-medium">Magento</strong>
+                      as a content management system and website creator to
+                      design, build, and manage websites.
+                    </p>
+                    <p class="mt-6">
+                      <a
+                        href="https://magento.com"
+                        target="_blank"
+                        class="font-medium text-indigo-600 hover:text-indigo-900"
+                        >&rarr; Learn more about Magento
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Botones de navegación -->
+          <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="banner-1 flex h-full items-center">
+  <div class="banner-1 flex h-full items-center" style="padding-top: 15%">
     <div class="w-7/12 p-12">
       <h2 class="text-gray-700 md:text-6xl text-2xl font-Eczar mb-5 font-bold">
-        Let’s work together and make everything super cute and super useful.
+        Let's build a path to success together: innovation and exceptional
+        results.
       </h2>
       <a class="underline text-2xl text-blue-600 font-work_sans"
-        >📧 hire@author.com</a
+        >📧 djmm171298@gmail.com</a
       >
     </div>
     <div class="w-5/12 pr-28">
       <div class="flex flex-wrap justify-end gap-2">
         <button
-          class="bg-gray-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded"
+          onclick="window.location.href = 'mailto:djmm171298@gmail.com';"
+          class="text-white bg-gray-800 submit-button hidden md:block"
         >
-          <svg
-            class="w-4 h-4 md:w-10 md:h-10 lg:w-10 lg:h-10 xl:h-10 xl:w-10 fill-current"
-            role="img"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
-            />
-          </svg>
+          Contact Me
         </button>
 
         <button
-          class="bg-gray-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded"
-        >
-          <svg
-            class="w-4 h-4 md:w-10 md:h-10 lg:w-10 lg:h-10 xl:h-10 xl:w-10 fill-current"
-            role="img"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
-            />
-          </svg>
-        </button>
-
-        <button
-          class="bg-gray-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded"
-        >
-          <svg
-            class="w-4 h-4 md:w-10 md:h-10 lg:w-10 lg:h-10 xl:h-10 xl:w-10 fill-current"
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"
-            />
-          </svg>
-        </button>
-
-        <button
-          class="bg-gray-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded"
-        >
-          <svg
-            class="w-4 h-4 md:w-10 md:h-10 lg:w-10 lg:h-10 xl:h-10 xl:w-10 fill-current"
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"
-            />
-          </svg>
-        </button>
-
-        <button
+          onclick="window.open('https://www.linkedin.com/in/ian-montero-moya-88a180209/', '_blank')"
           class="bg-gray-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded"
         >
           <svg
@@ -654,20 +983,20 @@ export default {
     },
     async downloadPDF() {
       try {
-        const response = await fetch('/assets/resume/resume.pdf');
+        const response = await fetch("/assets/resume/resume.pdf");
         const blob = await response.blob();
         const url = window.URL.createObjectURL(blob);
 
-        const link = document.createElement('a');
+        const link = document.createElement("a");
         link.href = url;
-        link.download = 'resume.pdf';
+        link.download = "resume.pdf";
         link.click();
 
         window.URL.revokeObjectURL(url);
       } catch (error) {
-        console.error('Error al descargar el PDF:', error);
+        console.error("Error al descargar el PDF:", error);
       }
-    }
+    },
   },
 };
 </script>

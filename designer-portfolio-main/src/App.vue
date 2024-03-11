@@ -509,7 +509,7 @@
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <!-- skill 1 -->
-            
+
             <!-- skill 3 -->
             <div class="swiper-slide">
               <div
@@ -541,8 +541,8 @@
                     <p>
                       I have used
                       <strong class="text-gray-900 font-medium">React</strong>
-                     as a library for building interactive and dynamic user interfaces using reusable components.
-
+                      as a library for building interactive and dynamic user
+                      interfaces using reusable components.
                     </p>
                     <p class="mt-6">
                       <a
@@ -587,7 +587,9 @@
                     <p>
                       I have used
                       <strong class="text-gray-900 font-medium">Vue</strong>
-                      as a JavaScript framework for building reactive and efficient user interfaces, with its focus on simplicity and scalability.
+                      as a JavaScript framework for building reactive and
+                      efficient user interfaces, with its focus on simplicity
+                      and scalability.
                     </p>
                     <p class="mt-6">
                       <a
@@ -632,7 +634,7 @@
                     <p>
                       I have used
                       <strong class="text-gray-900 font-medium">Laravel</strong>
-                      as  a  tool for creating modern, scalable web applications.
+                      as a tool for creating modern, scalable web applications.
                     </p>
                     <p class="mt-6">
                       <a
@@ -677,10 +679,9 @@
                   >
                     <p>
                       I have used
-                      <strong class="text-gray-900 font-medium"
-                        >Django</strong
-                      >
-                     as a framework to create  secure and scalable web applications, with an emphasis on code efficiency.
+                      <strong class="text-gray-900 font-medium">Django</strong>
+                      as a framework to create secure and scalable web
+                      applications, with an emphasis on code efficiency.
                     </p>
                     <p class="mt-6">
                       <a
@@ -725,7 +726,8 @@
                     <p>
                       I have used
                       <strong class="text-gray-900 font-medium">NodeJs</strong>
-                      as  a server-side  runtime environment  to create scalable, high-performance web applications.
+                      as a server-side runtime environment to create scalable,
+                      high-performance web applications.
                     </p>
                     <p class="mt-6">
                       <a
@@ -771,7 +773,9 @@
                     <p>
                       I have used
                       <strong class="text-gray-900 font-medium">.NET</strong>
-                      as  a development framework from Microsoft to create web applications. </p>
+                      as a development framework from Microsoft to create web
+                      applications.
+                    </p>
                     <p class="mt-6">
                       <a
                         href="https://dotnet.microsoft.com"
@@ -858,50 +862,76 @@ export default {
     };
   },
   mounted() {
+  if (process.env.NODE_ENV === 'production') {
+    this.call_workProd();
+  } else {
     this.call_work();
-    this.initSwiper();
-  },
+  }
+  this.initSwiper();
+},
   methods: {
     print_Work(title, jobDesc, imageName, company, siteURL) {
-      const htmlString = `
-      <div class="card">
-        <div class="space-y-5 py-8 px-8 md:py-16 md:px-20 md:w-1/2">
-          <h4 class="project-title item">${title}</h4>
-          <p class="font-work_sans pr-12">${jobDesc}</p>
-          <button onclick="window.open('${siteURL}');" target="_blank" class="text-sky-800 font-bold text-2xl tracking-wider">${company}</button>
-        </div>
-        <div class="card-image bg-green-100">
-          <img class="object-cover w-full h-72 md:h-96 " src="src/assets/${imageName}" />
-        </div>
+  const htmlString = `
+    <div class="card">
+      <div class="space-y-5 py-8 px-8 md:py-16 md:px-20 md:w-1/2">
+        <h4 class="project-title item">${title}</h4>
+        <p class="font-work_sans pr-12">${jobDesc}</p>
+        <button onclick="window.open('${siteURL}');" target="_blank" class="text-sky-800 font-bold text-2xl tracking-wider">${company}</button>
       </div>
-    `;
-      const printDiv = document.querySelector("#work");
-      if (printDiv) {
-        // Agregar la nueva tarjeta al contenido existente
-        printDiv.innerHTML += htmlString;
-      } else {
-        console.error("Elemento #work no encontrado en el DOM");
-      }
-    },
+      <div class="card-image bg-green-100">
+        <img class="object-cover w-full h-72 md:h-96 " src="${imageName}" />
+      </div>
+    </div>
+  `;
+  const printDiv = document.querySelector("#work");
+  if (printDiv) {
+    printDiv.innerHTML += htmlString;
+  } else {
+    console.error("can't find the DOM element");
+  }
+},
     call_work() {
       this.print_Work(
         "Software Engineer",
         "Work with team of developers in the development of backend and frontend solutions for the system that belongs to the company. I had to work with the docker tool to manage the Mysql database images and the main site image, also Github was used as version control. And the site is deployed on AWS . Develop bug fixes and create new backend and frontend feautures, using reactjs and php with Yii frame work. I managed to meet the sprint dates by demonstrating my progress using the scrum methodology.",
-        "commandlink.jpg",
+        "/src/assets/commandlink.jpg",
         "Commandlink",
         "https://www.commandlink.com"
       );
       this.print_Work(
         "Software Developer",
         "Work with the team of software engineers in the development from scratch of Web applications for clients, using different stacks and different tools. For the development from scratch I used the Docker tool for database and site management, I also got experience in Google Cloud Platform and AWS. Among the stacks that I worked mainly on was Php with its framework Laravel and Mysql as a database, I also managed Python in the backend with Django, withs Sqlite and ReacJS,  finally the last stack I worked on was Java using SpringBoot, with mongo DB, creating an API’s  for a clients. Use CI/CD for each of the projects we work on, creating continuous iterations to manage and meet client deadlines, using tools such as Jira and Slack. I managed to increase the amount of projects that the company could handle since I was able to be in two projects simultaneously as well as meet the expectations of the clients due to the process that is carried out with them in the development of the website. ",
-        "dsprocr.jpg",
+        "/src/assets/dsprocr.jpg",
         "DSpro",
         "https://dspro.tech"
       );
       this.print_Work(
         "Team Lead / Full Stack Developer",
         " As a lead I have been responsible for planning, executing and testing the projects and leading a team of 5 Software Developers. Also I have to develop Web applications in blockchain with javascript, web3 and reactjs. I had a direct relationship with customers and accompany them in the process of creating the Web Application. As a Full Stack developer I had to create resposive sites with diferents stacks as C# with framwork .NET, SQL and bootstrap, also Full stack aplications with php, Mysql, and in the Frontend with VueJS. I Develop  Smarts contracts with solidity to web3 Applications, Also I work and payment API’s as Paypal API or Binance API, among others... I had experience in CRM as a Magento and Wordpress, creating templates and made bug fixes",
-        "studios23.jpg",
+        "/src/assets/studios23.jpg",
+        "Studios23",
+        "https://www.codester.com/studios23"
+      );
+    },
+    call_workProd() {
+      this.print_Work(
+        "Software Engineer",
+        "Work with team of developers in the development of backend and frontend solutions for the system that belongs to the company. I had to work with the docker tool to manage the Mysql database images and the main site image, also Github was used as version control. And the site is deployed on AWS . Develop bug fixes and create new backend and frontend feautures, using reactjs and php with Yii frame work. I managed to meet the sprint dates by demonstrating my progress using the scrum methodology.",
+        "/assets/commandlink.jpg",
+        "Commandlink",
+        "https://www.commandlink.com"
+      );
+      this.print_Work(
+        "Software Developer",
+        "Work with the team of software engineers in the development from scratch of Web applications for clients, using different stacks and different tools. For the development from scratch I used the Docker tool for database and site management, I also got experience in Google Cloud Platform and AWS. Among the stacks that I worked mainly on was Php with its framework Laravel and Mysql as a database, I also managed Python in the backend with Django, withs Sqlite and ReacJS,  finally the last stack I worked on was Java using SpringBoot, with mongo DB, creating an API’s  for a clients. Use CI/CD for each of the projects we work on, creating continuous iterations to manage and meet client deadlines, using tools such as Jira and Slack. I managed to increase the amount of projects that the company could handle since I was able to be in two projects simultaneously as well as meet the expectations of the clients due to the process that is carried out with them in the development of the website. ",
+        "/assets/dsprocr.jpg",
+        "DSpro",
+        "https://dspro.tech"
+      );
+      this.print_Work(
+        "Team Lead / Full Stack Developer",
+        " As a lead I have been responsible for planning, executing and testing the projects and leading a team of 5 Software Developers. Also I have to develop Web applications in blockchain with javascript, web3 and reactjs. I had a direct relationship with customers and accompany them in the process of creating the Web Application. As a Full Stack developer I had to create resposive sites with diferents stacks as C# with framwork .NET, SQL and bootstrap, also Full stack aplications with php, Mysql, and in the Frontend with VueJS. I Develop  Smarts contracts with solidity to web3 Applications, Also I work and payment API’s as Paypal API or Binance API, among others... I had experience in CRM as a Magento and Wordpress, creating templates and made bug fixes",
+        "/assets/studios23.jpg",
         "Studios23",
         "https://www.codester.com/studios23"
       );
